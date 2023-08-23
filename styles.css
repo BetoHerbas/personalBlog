@@ -105,6 +105,13 @@ footer {
     margin-bottom: 0.5rem;
 }
 
+ul{
+    list-style-type: square;
+}
+
+h1{
+    text-align: center;
+}
 
 
 
