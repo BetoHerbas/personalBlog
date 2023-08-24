@@ -393,3 +393,22 @@ tr:hover {
     color: black;
 }
 
+
+.imageUser{
+    display: flex;
+ 
+}
+
+.infoUser{
+    background-color: #333;
+    color: #ddd;
+    width: 1000px;
+    display: none;
+    font-size: 30px;
+}
+.contenedor{
+    display: flex;
+}
+.imageUser:hover .infoUser{
+    display: block;
+}
