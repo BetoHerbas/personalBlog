@@ -141,28 +141,24 @@ img{
     
 }
 
-/* .índice nav {
-    align-items: center;
-    width: 25%;
-    margin: 2rem auto;
+ .índice{
+    width: 100%;
     padding: 2rem;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-} */
-/* .índice li a{
-    display: block;
-    padding: 12px;
-    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} 
+ .índice a{
     color: #333;
+    display: block;
 }
 
 .índice ul{
+    
     list-style-type: none;
-    padding: 0;
+    padding: 2;
     width: 200px;
     background-color: #f1f1f1;
-} */
+}
 .Libros img {
     width: 150px;
     margin: 10px;
@@ -213,6 +209,13 @@ tr:hover {
     font-size: smaller;
 }
 
+/*extras*/
+#pizzaList ul{
+    list-style-image: url(images/pizzaList.png);
+    color: black;
+}
 
-
+#pizzaList a{
+    color: black;
+}
 
