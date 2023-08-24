@@ -184,11 +184,68 @@ img{
     border: 5px solid #e3e3e3;
 }
 
-.hobbies, .Deportes, .Ciencia, .Música, .Libros {
+
+
+.Peliculas_A img{
+    width: 240px;
+    margin: 10px;   
+}
+
+.Peliculas_A a{
+    color: rgba(45, 234, 255, 0.694);
+}
+
+.Tabla_Peliculas{
+    font-size: smaller;
+}
+
+.hobbies, .Deportes, .Ciencia, .Música, .Libros{
     width: 90%;
     margin: 2rem auto;
     padding: 2rem;
     background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hobbies_a{
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #15274d;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hobbies_a img{
+    width:auto;
+    border: 5px ;
+}
+
+.Universos{
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #514359;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Universos img{
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Peliculas_A{
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -382,6 +439,7 @@ tr:hover {
 .Tabla_Posiciones {
     font-size: smaller;
 }
+
 
 /*extras*/
 #pizzaList ul{
