@@ -54,6 +54,7 @@ nav a:hover {
     margin-bottom: 1rem;
 }
 
+.hobbies,.Deportes, .Ciencia, .Música, .Libros,
 .text {
     background-color: #fff;
     padding: 1.5rem;
@@ -143,7 +144,30 @@ img{
     
 }
 
+/* .índice nav {
+    align-items: center;
+    width: 25%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+/* .índice li a{
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: #333;
+}
 
+.índice ul{
+    list-style-type: none;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+} */
 
-
+.Libros img{
+    width: 150px;
+}
 
