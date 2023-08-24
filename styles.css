@@ -54,13 +54,13 @@ nav a:hover {
     margin-bottom: 1rem;
 }
 
-.hobbies,.Deportes, .Ciencia, .Música, .Libros,
 .text {
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
+
 }
 
 .text img {
@@ -126,9 +126,6 @@ h1{
 }
 
 .carousel-item {
-    /* flex: 0 0 100%;
-    padding: 10px;
-    border: 1px solid #ccc; */
     color: #f2f2f2;
     align-items: center;
     width: 25%;
@@ -167,7 +164,20 @@ img{
     background-color: #f1f1f1;
 } */
 
-.Libros img{
+.Libros img {
     width: 150px;
+    margin: 10px;
+    border: 5px solid #e3e3e3;
 }
+
+.hobbies, .Deportes, .Ciencia, .Música, .Libros {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
 
