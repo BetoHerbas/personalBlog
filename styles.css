@@ -160,29 +160,24 @@ img{
     
 }
 
-/* .índice nav {
-    align-items: center;
-    width: 25%;
-    margin: 2rem auto;
+ .índice{
+    width: 100%;
     padding: 2rem;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-} */
-/* .índice li a{
-    display: block;
-    padding: 12px;
-    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} 
+ .índice a{
     color: #333;
+    display: block;
 }
 
 .índice ul{
+    
     list-style-type: none;
-    padding: 0;
+    padding: 2;
     width: 200px;
     background-color: #f1f1f1;
-} */
-
+}
 .Libros img {
     width: 150px;
     margin: 10px;
@@ -353,5 +348,48 @@ button:hover{
     background-color: #f7f7f7;
   }
   
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
 
+th, td {
+border: 1px solid #252525;
+padding: 8px;
+text-align: center;
+}
+
+th {
+background-color: #cdcdcd;
+}
+
+tr:hover {
+    background-color: rgb(147, 147, 147)faf;
+}
+
+.Deportes img {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.Tabla_Posiciones img {
+    width: 15px;
+}
+
+.Tabla_Posiciones {
+    font-size: smaller;
+}
+
+/*extras*/
+#pizzaList ul{
+    list-style-image: url(images/pizzaList.png);
+    color: black;
+}
+
+#pizzaList a{
+    color: black;
+}
 
