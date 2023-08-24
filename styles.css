@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -17,7 +17,7 @@ header {
     text-align: center;
 }
 
-#name{
+#name {
     font-size: 45px;
     font-weight: bold;
 }
@@ -37,26 +37,27 @@ nav li {
 nav a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s ease-in-out; 
+    transition: color 0.3s ease-in-out;
 }
 
 nav a:hover {
-    color: #ffd700; 
+    color: #ffd700;
 }
 
-#indice{
+#indice {
     color: #2b2b2b;
     font-size: 26px;
 }
 
 #indice .indice ul li a {
     color: black;
-    font-size: 16px; 
+    font-size: 16px;
 }
 
 #indice .indice ul li a:hover {
-    color: #ffd700; /* Cambiar el color al pasar el cursor por encima */
-  }
+    color: #ffd700;
+    /* Cambiar el color al pasar el cursor por encima */
+}
 
 .main-content {
     width: 70%;
@@ -125,23 +126,25 @@ footer {
     margin-bottom: 0.5rem;
 }
 
-ul{
+ul {
     list-style-type: square;
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
+
+/* Música */
 .carousel {
     width: 100%;
     overflow: hidden;
     position: relative;
-  }
-  
+}
+
 .carousel-container {
     display: flex;
-    transition: transform 0.3s ease-in-out;
+    justify-content: space-evenly;
 }
 
 .carousel-item {
@@ -153,53 +156,82 @@ h1{
     background-color: #2b2b2b;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-img{
+.carousel-item img {
+    margin: 15px;
+}
+
+/* sonido */
+audio {
+    width: 100%;
+    /* Make the audio player full-width */
+}
+
+/* Style the audio controls */
+audio::-webkit-media-controls-panel {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Style the play and pause button */
+audio::-webkit-media-controls-play-button {
+    background-color: #2b2b2b;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#nombreCanción {
+    font-weight: bold;
+}
+
+#artistaCanción {
+    font-size: x-small;
+    color: #a3a3a3;
+}
+
+img {
     width: 90%;
-    
 }
 
- .índice{
+.índice {
     width: 100%;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-} 
- .índice a{
+}
+
+.índice a {
     color: #333;
     display: block;
 }
 
-.índice ul{
-    
+.índice ul {
+
     list-style-type: none;
     padding: 2;
     width: 200px;
     background-color: #f1f1f1;
 }
-.Libros img {
+
+#LibrosL img {
     width: 150px;
     margin: 10px;
     border: 5px solid #e3e3e3;
 }
 
-
-
-.Peliculas_A img{
-    width: 240px;
-    margin: 10px;   
-}
-
-.Peliculas_A a{
-    color: rgba(45, 234, 255, 0.694);
-}
-
-.Tabla_Peliculas{
-    font-size: smaller;
-}
-
-.hobbies, .Deportes, .Ciencia, .Música, .Libros{
+#HobbiesL,
+#DeportesL,
+#CienciaL,
+#MúsicaL,
+#LibrosL {
     width: 90%;
     margin: 2rem auto;
     padding: 2rem;
@@ -255,13 +287,16 @@ img{
     padding: 200px 12px;
 }
 
-.color-acento{ color: blueviolet;}
-#libro .container{
+.color-acento {
+    color: blueviolet;
+}
+
+#libro .container {
     display: flex;
     justify-content: space-evenly;
 }
 
-#libro .texto{
+#libro .texto {
     width: 50%;
     max-width: 600px;
     text-align: initial;
@@ -272,17 +307,17 @@ img{
     justify-content: center;
 }
 
-#libro h2{
+#libro h2 {
     font-size: 2.7em;
     margin-top: 0;
 }
 
-#libro h3{
+#libro h3 {
     font-size: 1.6em;
     margin-top: 0;
 }
 
-#libro .img-container{
+#libro .img-container {
     background-image: url("Extra/de-la-tierra-a-la-luna-portada.jpeg");
     background-size: cover;
     background-position: center center;
@@ -290,40 +325,40 @@ img{
     width: 600px;
 }
 
-#peliculas{
+#peliculas {
     background-color: rgb(0, 0, 0);
     color: white;
 }
 
-#peliculas .container{
-    
+#peliculas .container {
+
     text-align: center;
     padding: 100px 0px;
 }
 
-#peliculas h2{
+#peliculas h2 {
     margin-top: 0;
     font-size: 3.2em;
 }
 
-#peliculas .programas{
+#peliculas .programas {
     display: flex;
     justify-content: center;
 }
 
-#peliculas p{
+#peliculas p {
     display: block;
     font-size: 0.7em;
     margin-bottom: 30px;
 }
 
-#peliculas h3{
+#peliculas h3 {
     font-size: 1.5em;
     font-style: condensed;
     margin-top: 120px;
 }
 
-#peliculas .carta{
+#peliculas .carta {
     height: 200px;
     width: 250px;
     background-position: center center;
@@ -337,45 +372,36 @@ img{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.carta:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("Extra/madagascar3.jpg");   
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Extra/madagascar3.jpg");
 }
 
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("Extra/loboDeWallStreet.jpg");
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Extra/loboDeWallStreet.jpg");
 }
 
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("Extra/interestelar1.1.jpg");
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Extra/interestelar1.1.jpg");
 }
 
-button{
+button {
     font-size: 0.9em;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px;
-    border: 1px solid rgba(0,0,0,0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     color: white;
     background-color: blueviolet;
 }
 
-button:hover{
+button:hover {
     background-color: rgb(130, 0, 252);
 }
 
@@ -384,27 +410,28 @@ button:hover{
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-  }
-  
-  .horario th, .horario td {
+}
+
+.horario th,
+.horario td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
-  }
-  
-  .horario th {
+}
+
+.horario th {
     background-color: #f2f2f2;
     font-weight: bold;
-  }
-  
-  .horario td {
+}
+
+.horario td {
     background-color: #fff;
-  }
-  
-  .horario td:hover {
+}
+
+.horario td:hover {
     background-color: #f7f7f7;
-  }
-  
+}
+
 /* Tables */
 table {
     border-collapse: collapse;
@@ -412,21 +439,24 @@ table {
     margin: auto;
 }
 
-th, td {
-border: 1px solid #252525;
-padding: 8px;
-text-align: center;
+th,
+td {
+    border: 1px solid #252525;
+    padding: 8px;
+    text-align: center;
 }
 
 th {
-background-color: #cdcdcd;
+    background-color: #cdcdcd;
 }
 
 tr:hover {
     background-color: rgb(147, 147, 147)faf;
 }
 
-.Deportes img {
+
+
+#NBA img {
     width: 200px;
     margin: 0 auto;
     display: block;
@@ -442,12 +472,11 @@ tr:hover {
 
 
 /*extras*/
-#pizzaList ul{
+#pizzaList ul {
     list-style-image: url(images/pizzaList.png);
     color: black;
 }
 
-#pizzaList a{
+#pizzaList a {
     color: black;
 }
-
