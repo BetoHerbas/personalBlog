@@ -1,528 +1,651 @@
+/*FORMATO GENERAL*/
+
+/* Habilita el desplazamiento suave en la página */
 html {
     scroll-behavior: smooth;
 }
 
+/* Estilos generales para el cuerpo del documento */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-    color: #333;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuente del texto */
+    margin: 0; /* Elimina el margen exterior */
+    padding: 0; /* Elimina el relleno interior */
+    background-color: #f2f2f2; /* Color de fondo */
+    color: #333; /* Color del texto */
 }
 
+/* Estilos para el encabezado */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto en el encabezado */
+    padding: 1rem; /* Espaciado interno en el encabezado, crea un margen interno */
+    text-align: center; /* Alineación del texto en el centro */
 }
 
-#name {
-    font-size: 45px;
-    font-weight: bold;
+/* Estilos para todas las imágenes */
+img {
+    width: 90%; /* Ancho del 90% del contenedor */
 }
 
+/* Estilos para los botones */
+button {
+    font-size: 0.9em; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de fuente */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 1px solid rgba(0, 0, 0, 0.5); /* Borde con transparencia */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    color: white; /* Color de texto */
+    background-color: blueviolet; /* Color de fondo */
+}
 
+/* Estilos para los botones al pasar el cursor por encima */
+button:hover {
+    background-color: rgb(130, 0, 252); /* Cambiar el color de fondo */
+}
+
+/* Estilos para las listas no ordenadas dentro del elemento "nav" */
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    list-style: none; /* Elimina los marcadores de lista */
+    margin: 0; /* Elimina los márgenes externos */
+    padding: 0; /* Elimina el relleno interno */
 }
 
+/* Estilos para los elementos de lista dentro de "nav" */
 nav li {
-    display: inline;
-    margin-right: 20px;
+    display: inline; /* Los elementos se muestran en línea */
+    margin-right: 20px; /* Margen derecho entre elementos */
 }
 
+/* Estilos para los enlaces dentro de "nav" */
 nav a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    transition: color 0.3s ease-in-out; /* Transición suave del color del texto */
 }
 
+/* Estilos para los enlaces en estado "hover" dentro de "nav" */
 nav a:hover {
-    color: #ffd700;
+    color: #ffd700; /* Color del texto 'ffd700' al pasar el cursor sobre los enlaces */
 }
 
-#indice {
-    color: #2b2b2b;
-    font-size: 26px;
-}
-
-#indice .indice ul li a {
-    color: black;
-    font-size: 16px;
-}
-
-#indice .indice ul li a:hover {
-    color: #ffd700;
-    /* Cambiar el color al pasar el cursor por encima */
-}
-
-.main-content {
-    width: 70%;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.main-content img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-}
-
-.text {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
-
-}
-
-.text img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-}
-
-.contact ul {
-    list-style: none;
-    padding: 0;
-}
-
-.contact li {
-    margin-bottom: 0.5rem;
-}
-
+/* Estilos para el pie de página */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto en el pie de página */
+    text-align: center; /* Alineación del texto al centro */
+    padding: 1rem; /* Espaciado interno en el pie de página */
 }
 
+/* Estilos para todas las listas desordenadas en la página */
+ul {
+    list-style-type: square; /* Tipo de marcador cuadrado */
+}
+
+/* Estilos para todos los títulos de nivel 1 en la página */
+h1 {
+    text-align: center; /* Alineación del texto al centro */
+}
+
+/*ID*/
+
+/* Estilos para el elemento con el id "name" */
+#name {
+    font-size: 45px; /* Tamaño de fuente grande 45px*/
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para el elemento con el id "indice" */
+#indice {
+    color: #2b2b2b; /* Color del texto del elemento */
+    font-size: 26px; /* Tamaño de fuente grande */
+}
+
+/* Estilos para los enlaces dentro de listas en el elemento con el id "indice" */
+#indice .indice ul li a {
+    color: black; /* Color del texto de los enlaces */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilos para los enlaces en estado "hover" dentro de listas en el elemento con el id "indice" */
+#indice .indice ul li a:hover {
+    color: #ffd700; /* Cambiar el color al pasar el cursor por encima */
+}
+
+/*SECCIONES*/
+
+/* Estilos para el contenido principal */
+.main-content {
+    width: 70%; /* Ancho del contenido */
+    margin: 2rem auto; /* Margen en la parte superior e inferior, y centrado horizontalmente */
+    padding: 2rem; /* Espaciado interno */
+    background-color: #fff; /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos para imágenes dentro del contenido principal */
+.main-content img {
+    max-width: 100%; /* Ancho máximo de la imagen */
+    height: auto; /* Ajuste automático de la altura para mantener la proporción */
+    margin-bottom: 1rem; /* Margen inferior */
+}
+
+/* Estilos para el elemento con la clase "índice" */
+.índice {
+    width: 100%; /* Ancho del 100% del contenedor */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos para los enlaces dentro de elementos con la clase "índice" */
+.índice a {
+    color: #333; /* Color del texto */
+    display: block; /* Convertir en elemento de bloque */
+}
+
+/* Estilos para listas desordenadas dentro de elementos con la clase "índice" */
+.índice ul {
+    list-style-type: none; /* Eliminar marcadores de lista */
+    padding: 2; /* Espaciado interno */
+    width: 200px; /* Ancho */
+    background-color: #f1f1f1; /* Color de fondo */
+}
+
+/* Estilos para secciones de texto */
+.text {
+    background-color: #fff; /* Color de fondo */
+    padding: 1.5rem; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin-bottom: 2rem; /* Margen inferior */
+}
+
+/* Estilos para imágenes dentro de secciones de texto */
+.text img {
+    max-width: 100%; /* Ancho máximo de la imagen */
+    height: auto; /* Ajuste automático de la altura para mantener la proporción */
+    margin-bottom: 1rem; /* Margen inferior */
+}
+
+/* Estilos para la sección de contacto */
 .contact {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    background-color: #fff; /* Color de fondo */
+    padding: 1.5rem; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin-bottom: 2rem; /* Margen inferior */
 }
 
-.contact h3 {
-    margin-bottom: 1rem;
-}
-
+/* Estilos para información de contacto */
 .contact ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Elimina marcadores de lista */
+    padding: 0; /* Sin relleno */
 }
 
 .contact li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem; /* Margen inferior */
 }
 
-ul {
-    list-style-type: square;
+/* Estilos para el título de la sección de contacto */
+.contact h3 {
+    margin-bottom: 1rem; /* Margen inferior */
 }
 
-h1 {
-    text-align: center;
+/* Estilos para listas dentro de la sección de contacto */
+.contact ul {
+    list-style: none; /* Elimina marcadores de lista */
+    padding: 0; /* Sin relleno */
 }
 
+.contact li {
+    margin-bottom: 0.5rem; /* Margen inferior */
+}
 
 /* Música */
+/* Estilos para el carrusel de música */
 .carousel {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+    width: 100%; /* Ancho total */
+    overflow: hidden; /* Ocultar contenido que excede el contenedor */
+    position: relative; /* Posición relativa */
 }
 
+/* Estilos para el contenedor del carrusel */
 .carousel-container {
-    display: flex;
-    justify-content: space-evenly;
+    display: flex; /* Mostrar elementos en línea */
+    justify-content: space-evenly; /* Espacio uniforme entre elementos */
 }
 
+/* Estilos para los elementos del carrusel */
 .carousel-item {
-    color: #f2f2f2;
-    align-items: center;
-    width: 25%;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #2b2b2b;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    color: #f2f2f2; /* Color del texto */
+    align-items: center; /* Alinear elementos verticalmente */
+    width: 25%; /* Ancho del elemento */
+    margin: 2rem auto; /* Margen en la parte superior e inferior, centrado horizontalmente */
+    padding: 2rem; /* Espaciado interno */
+    background-color: #2b2b2b; /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: center; /* Alineación del texto al centro */
 }
 
+/* Estilos para las imágenes dentro de los elementos del carrusel */
 .carousel-item img {
-    margin: 15px;
+    margin: 15px; /* Margen alrededor de la imagen */
 }
 
-/* sonido */
+/*SONIDO*/
+/* Estilos para elementos de audio */
 audio {
-    width: 100%;
-    /* Make the audio player full-width */
+    width: 100%; /* Hacer el reproductor de audio de ancho completo */
 }
 
-/* Style the audio controls */
+/* Estilizar los controles de audio */
 audio::-webkit-media-controls-panel {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 10px;
+    background-color: #ffffff; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
 }
 
-/* Style the play and pause button */
+
+/* Estilizar el botón de reproducir y pausar */
 audio::-webkit-media-controls-play-button {
-    background-color: #2b2b2b;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-    cursor: pointer;
+    background-color: #2b2b2b; /* Color de fondo */
+    border-radius: 50%; /* Bordes redondeados para crear un círculo */
+    width: 30px; /* Ancho */
+    height: 30px; /* Altura */
+    font-size: 20px; /* Tamaño de fuente */
+    line-height: 30px; /* Alineación vertical del texto */
+    text-align: center; /* Alineación del texto al centro */
+    cursor: pointer; /* Cambiar el cursor a un ícono de puntero */
 }
 
+
+/* Estilos para el nombre de la canción */
 #nombreCanción {
-    font-weight: bold;
+    font-weight: bold; /* Establecer peso de fuente en negrita */
 }
 
+/* Estilos para el artista de la canción */
 #artistaCanción {
-    font-size: x-small;
-    color: #a3a3a3;
+    font-size: x-small; /* Tamaño de fuente pequeño */
+    color: #a3a3a3; /* Color de texto gris */
 }
 
-img {
-    width: 90%;
-}
-
-.índice {
-    width: 100%;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.índice a {
-    color: #333;
-    display: block;
-}
-
-.índice ul {
-
-    list-style-type: none;
-    padding: 2;
-    width: 200px;
-    background-color: #f1f1f1;
-}
-
+/* Estilos para imágenes dentro del elemento con el id "LibrosL" */
 #LibrosL img {
-    width: 150px;
-    margin: 10px;
-    border: 5px solid #e3e3e3;
+    width: 150px; /* Ancho de la imagen */
+    margin: 10px; /* Margen alrededor de la imagen */
+    border: 5px solid #e3e3e3; /* Borde alrededor de la imagen */
 }
 
+/* Estilos para secciones de Hobbies, Deportes, Ciencia, Música y Libros */
 #HobbiesL,
 #DeportesL,
 #CienciaL,
 #MúsicaL,
 #LibrosL {
-    width: 90%;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ancho del 90% del contenedor */
+    margin: 2rem auto; /* Margen en la parte superior e inferior, centrado horizontalmente */
+    padding: 2rem; /* Espaciado interno */
+    background-color: #fff; /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
-.hobbies_a{
-    width: 90%;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #15274d;
-    color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Estilos para elementos con la clase "hobbies_a" */
+.hobbies_a {
+    width: 90%; /* Ancho del 90% del contenedor */
+    margin: 2rem auto; /* Margen en la parte superior e inferior, centrado horizontalmente */
+    padding: 2rem; /* Espaciado interno */
+    background-color: #15274d; /* Color de fondo */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
-.hobbies_a img{
-    width:auto;
-    border: 5px ;
+/* Estilos para imágenes dentro de elementos con la clase "hobbies_a" */
+.hobbies_a img {
+    width: auto; /* Ancho automático */
+    border: 5px; /* Borde */
 }
 
-.Libros_a{
-    width: 90%;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: rgb(186, 178, 178);
-    color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Estilos para elementos con la clase "Libros_a" */
+.Libros_a {
+    width: 90%; /* Ancho del 90% del contenedor */
+    margin: 2rem auto; /* Margen en la parte superior e inferior, centrado horizontalmente */
+    padding: 2rem; /* Espaciado interno */
+    background-color: rgb(186, 178, 178); /* Color de fondo */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
+/* Estilos para imágenes dentro de elementos con la clase "Libros_a" */
 .Libros_a img {
-    width: 150px;
-    margin: 10px;
-    border: 5px solid #e3e3e3;
+    width: 150px; /* Ancho de la imagen */
+    margin: 10px; /* Margen alrededor de la imagen */
+    border: 5px solid #e3e3e3; /* Borde alrededor de la imagen */
 }
 
-.Universos{
-    width: 90%;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #514359;
-    color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Estilos para elementos con la clase "Universos" */
+.Universos {
+    width: 90%; /* Ancho del 90% del contenedor */
+    margin: 2rem auto; /* Margen en la parte superior e inferior, centrado horizontalmente */
+    padding: 2rem; /* Espaciado interno */
+    background-color: #514359; /* Color de fondo */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
-.Universos img{
-    width: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/* Estilos para imágenes dentro de elementos con la clase "Universos" */
+.Universos img {
+    width: auto; /* Ancho automático */
+    display: block; /* Convertir en elemento de bloque */
+    margin-left: auto; /* Margen izquierdo automático */
+    margin-right: auto; /* Margen derecho automático */
 }
 
-.Peliculas_A{
-    width: 90%;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Estilos para elementos con la clase "Peliculas_A" */
+.Peliculas_A {
+    width: 90%; /* Ancho del 90% del contenedor */
+    margin: 2rem auto; /* Margen en la parte superior e inferior, centrado horizontalmente */
+    padding: 2rem; /* Espaciado interno */
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
-.Peliculas_A img{
-    width: 200px;
-    height: auto;
-    margin: 20px;
+/* Estilos para imágenes dentro de elementos con la clase "Peliculas_A" */
+.Peliculas_A img {
+    width: 200px; /* Ancho de la imagen */
+    height: auto; /* Altura automática */
+    margin: 20px; /* Margen alrededor de la imagen */
 }
 
-#libro{
-    text-align: center;
-    padding: 200px 12px;
+
+/* Estilos para el elemento con el id "libro" */
+#libro {
+    text-align: center; /* Alineación del texto al centro */
+    padding: 200px 12px; /* Espaciado interno (200px arriba/abajo, 12px izquierda/derecha) */
 }
 
+/* Estilos para elementos con la clase "color-acento" */
 .color-acento {
-    color: blueviolet;
+    color: blueviolet; /* Cambiar el color del texto a azul violeta */
 }
 
+/* Estilos para el contenido dentro del elemento con el id "libro" */
 #libro .container {
-    display: flex;
-    justify-content: space-evenly;
+    display: flex; /* Mostrar elementos en línea */
+    justify-content: space-evenly; /* Espacio uniforme entre elementos */
 }
 
+
+/* Estilos para el texto dentro del elemento con el id "libro" */
 #libro .texto {
-    width: 50%;
-    max-width: 600px;
-    text-align: initial;
-    padding: 0px 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: column;
-    justify-content: center;
+    width: 50%; /* Ancho del 50% */
+    max-width: 600px; /* Ancho máximo de 600px */
+    text-align: initial; /* Alineación del texto a la izquierda */
+    padding: 0px 30px; /* Espaciado interno (0px arriba/abajo, 30px izquierda/derecha) */
+    display: flex; /* Mostrar elementos en línea */
+    flex-direction: column; /* Dirección de columna */
+    align-items: column; /* Alinear elementos verticalmente */
+    justify-content: center; /* Justificar contenido verticalmente */
 }
 
+
+/* Estilos para el título h2 dentro del elemento con el id "libro" */
 #libro h2 {
-    font-size: 2.7em;
-    margin-top: 0;
+    font-size: 2.7em; /* Tamaño de fuente */
+    margin-top: 0; /* Eliminar margen superior */
 }
 
+
+/* Estilos para los títulos h3 dentro del elemento con el id "libro" */
 #libro h3 {
-    font-size: 1.6em;
-    margin-top: 0;
+    font-size: 1.6em; /* Tamaño de fuente */
+    margin-top: 0; /* Eliminar margen superior */
 }
 
+/* Estilos para el contenedor de imagen dentro del elemento con el id "libro" */
 #libro .img-container {
-    background-image: url("Extra/de-la-tierra-a-la-luna-portada.jpeg");
-    background-size: cover;
-    background-position: center center;
-    height: 700px;
-    width: 600px;
+    background-image: url("Extra/de-la-tierra-a-la-luna-portada.jpeg"); /* Imagen de fondo */
+    background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+    background-position: center center; /* Posición centrada de la imagen */
+    height: 700px; /* Altura de 700px */
+    width: 600px; /* Ancho de 600px */
 }
 
+/* Estilos para la sección de películas */
 #peliculas {
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: rgb(0, 0, 0); /* Color de fondo negro */
+    color: white; /* Color de texto blanco */
 }
 
+/* Estilos para el contenido dentro de la sección de películas */
 #peliculas .container {
-
-    text-align: center;
-    padding: 100px 0px;
+    text-align: center; /* Alineación del texto al centro */
+    padding: 100px 0px; /* Espaciado interno (100px arriba/abajo, 0px izquierda/derecha) */
 }
 
+/* Estilos para los títulos h2 dentro de la sección de películas */
 #peliculas h2 {
-    margin-top: 0;
-    font-size: 3.2em;
+    margin-top: 0; /* Eliminar margen superior */
+    font-size: 3.2em; /* Tamaño de fuente */
 }
 
+/* Estilos para los elementos con la clase "programas" dentro de la sección de películas */
 #peliculas .programas {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Mostrar elementos en línea */
+    justify-content: center; /* Centrar horizontalmente los elementos */
 }
 
+/* Estilos para los párrafos dentro de la sección de películas */
 #peliculas p {
-    display: block;
-    font-size: 0.7em;
-    margin-bottom: 30px;
+    display: block; /* Mostrar como bloque */
+    font-size: 0.7em; /* Tamaño de fuente */
+    margin-bottom: 30px; /* Margen inferior */
 }
 
+/* Estilos para los títulos h3 dentro de la sección de películas */
 #peliculas h3 {
-    font-size: 1.5em;
-    font-style: condensed;
-    margin-top: 120px;
+    font-size: 1.5em; /* Tamaño de fuente */
+    font-style: condensed; /* Estilo de fuente condensado */
+    margin-top: 120px; /* Margen superior */
 }
 
+/* Estilos para las cartas de películas dentro de la sección de películas */
 #peliculas .carta {
-    height: 200px;
-    width: 250px;
-    background-position: center center;
-    padding: 50px;
-    margin: 20px;
-    border-radius: 15px;
-    background-size: 100% 150px;
-    background-repeat: no-repeat;
-    background-position-y: 0;
-    background-color: rgb(50, 50, 50, 0.5);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    height: 200px; /* Altura de la carta */
+    width: 250px; /* Ancho de la carta */
+    background-position: center center; /* Posición de fondo centrada */
+    padding: 50px; /* Espaciado interno */
+    margin: 20px; /* Margen alrededor de la carta */
+    border-radius: 15px; /* Bordes redondeados */
+    background-size: 100% 150px; /* Tamaño de fondo */
+    background-repeat: no-repeat; /* No repetir el fondo */
+    background-position-y: 0; /* Posición vertical de fondo */
+    background-color: rgb(50, 50, 50, 0.5); /* Color de fondo con transparencia */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Sombra */
 }
 
+/* Estilos para la primera carta de películas */
 .carta:first-child {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("Extra/madagascar3.jpg");
+            rgba(0, 0, 0, 0.5)), url("Extra/madagascar3.jpg"); /* Imagen de fondo con superposición de gradiente */
 }
 
+/* Estilos para la segunda carta de películas */
 .carta:nth-child(2) {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("Extra/loboDeWallStreet.jpg");
+            rgba(0, 0, 0, 0.5)), url("Extra/loboDeWallStreet.jpg"); /* Imagen de fondo con superposición de gradiente */
 }
 
+/* Estilos para la tercera carta de películas */
 .carta:nth-child(3) {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("Extra/interestelar1.1.jpg");
+            rgba(0, 0, 0, 0.5)), url("Extra/interestelar1.1.jpg"); /* Imagen de fondo con superposición de gradiente */
 }
 
-button {
-    font-size: 0.9em;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    color: white;
-    background-color: blueviolet;
-}
-
-button:hover {
-    background-color: rgb(130, 0, 252);
-}
-
-
+/* Estilos para la tabla de horarios */
 .horario {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+    width: 100%; /* Ancho del 100% */
+    border-collapse: collapse; /* Colapsar bordes de celda */
+    margin: 20px 0; /* Margen en la parte superior e inferior */
 }
 
 .horario th,
 .horario td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
+    border: 1px solid #ddd; /* Borde de celda */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto al centro */
 }
 
 .horario th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+    background-color: #f2f2f2; /* Color de fondo para encabezados de columna */
+    font-weight: bold; /* Peso de fuente */
 }
 
 .horario td {
-    background-color: #fff;
+    background-color: #fff; /* Color de fondo para celdas */
 }
 
 .horario td:hover {
-    background-color: #f7f7f7;
+    background-color: #f7f7f7; /* Cambiar el color de fondo al pasar el cursor por encima */
 }
 
-/* Tables */
+
+/* Estilos generales para tablas */
 table {
-    border-collapse: collapse;
-    width: 80%;
-    margin: auto;
+    border-collapse: collapse; /* Colapsar bordes de celda */
+    width: 80%; /* Ancho del 80% */
+    margin: auto; /* Centrar horizontalmente la tabla */
 }
 
 th,
 td {
-    border: 1px solid #252525;
-    padding: 8px;
-    text-align: center;
+    border: 1px solid #252525; /* Borde de celda */
+    padding: 8px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto al centro */
 }
 
 th {
-    background-color: #cdcdcd;
+    background-color: #cdcdcd; /* Color de fondo para encabezados de columna */
 }
 
 tr:hover {
-    background-color: rgb(147, 147, 147)faf;
+    background-color: rgb(147, 147, 147)faf; /* Cambiar el color de fondo al pasar el cursor por encima */
 }
 
-
-
+/* Estilos para las imágenes dentro del elemento con el id "NBA" */
 #NBA img {
-    width: 200px;
-    margin: 0 auto;
-    display: block;
+    width: 200px; /* Ancho de imagen */
+    margin: 0 auto; /* Margen automático en los lados horizontal */
+    display: block; /* Mostrar como bloque para centrar la imagen */
 }
 
+/* Estilos para las imágenes dentro de elementos con la clase "Tabla_Posiciones" */
 .Tabla_Posiciones img {
-    width: 15px;
+    width: 15px; /* Ancho de imagen */
 }
 
+/* Estilos para elementos con la clase "Tabla_Posiciones" */
 .Tabla_Posiciones {
-    font-size: smaller;
+    font-size: smaller; /* Tamaño de fuente más pequeño */
 }
-
 
 /*extras*/
+/* Estilos para la lista dentro del elemento con el id "pizzaList" */
 #pizzaList ul {
-    list-style-image: url(images/pizzaList.png);
-    color: black;
+    list-style-image: url(images/pizzaList.png); /* Imagen de viñeta */
+    color: black; /* Color de texto */
 }
 
+/* Estilos para los enlaces dentro del elemento con el id "pizzaList" */
 #pizzaList a {
-    color: black;
-<<<<<<< HEAD
+    color: black; /* Color de texto */
 }
 
+/* Estilos para la imagen de usuario */
+.imageUser {
+    display: flex; /* Mostrar como flex para alinear elementos */
+}
 
-.imageUser{
+/* Estilos para la información de usuario */
+.infoUser {
+    background-color: #333; /* Color de fondo */
+    color: #ddd; /* Color de texto */
+    width: 1000px; /* Ancho de información */
+    display: none; /* Ocultar inicialmente */
+    font-size: 30px; /* Tamaño de fuente */
+}
+
+/* Estilos para el contenedor */
+.contenedor {
+    display: flex; /* Mostrar como flex para alinear elementos */
+}
+
+/* Estilos al pasar el cursor por encima de .imageUser */
+.imageUser:hover .infoUser {
+    display: block; /* Mostrar la información al pasar el cursor por encima */
+}
+
+/*about us INDEX*/
+/* Estilos para el contenedor de imágenes e información */
+.image-container {
     display: flex;
- 
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
-.infoUser{
-    background-color: #333;
-    color: #ddd;
-    width: 1000px;
+/* Estilos para el contenedor de imagen e información individual */
+.image-info {
+    text-align: center;
+    position: relative;
+}
+
+/* Estilos para las imágenes circulares */
+.circular-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos para la información debajo de las imágenes */
+.infoImagen {
     display: none;
-    font-size: 30px;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
-.contenedor{
-    display: flex;
-}
-.imageUser:hover .infoUser{
+
+/* Muestra la información al pasar el mouse sobre la imagen */
+.image-info:hover .infoImagen {
     display: block;
+    opacity: 1;
 }
-=======
+
+/* Ajusta la imagen cuando el mouse está sobre ella */
+.image-info:hover .circular-image {
+    transform: scale(1.1);
 }
->>>>>>> 2107773579be08e3fa632a6f04190d8b27810340
+
+
