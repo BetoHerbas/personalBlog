@@ -227,6 +227,7 @@ img {
     border: 5px solid #e3e3e3;
 }
 
+#PeliculasL,
 #HobbiesL,
 #DeportesL,
 #CienciaL,
@@ -476,8 +477,6 @@ tr:hover {
     background-color: rgb(147, 147, 147)faf;
 }
 
-
-
 #NBA img {
     width: 200px;
     margin: 0 auto;
@@ -501,9 +500,7 @@ tr:hover {
 
 #pizzaList a {
     color: black;
-<<<<<<< HEAD
 }
-
 
 .imageUser{
     display: flex;
@@ -523,6 +520,3 @@ tr:hover {
 .imageUser:hover .infoUser{
     display: block;
 }
-=======
-}
->>>>>>> 2107773579be08e3fa632a6f04190d8b27810340
