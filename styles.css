@@ -39,10 +39,6 @@ button {
     background-color: blueviolet; /* Color de fondo */
 }
 
-/* Estilos para los botones al pasar el cursor por encima */
-button:hover {
-    background-color: rgb(130, 0, 252); /* Cambiar el color de fondo */
-}
 
 /* Estilos para las listas no ordenadas dentro del elemento "nav" */
 nav ul {
@@ -53,8 +49,8 @@ nav ul {
 
 /* Estilos para los elementos de lista dentro de "nav" */
 nav li {
-    display: inline; /* Los elementos se muestran en línea */
-    margin-right: 20px; /* Margen derecho entre elementos */
+    display: inline;
+    margin-right: 20px;
 }
 
 /* Estilos para los enlaces dentro de "nav" */
@@ -97,14 +93,14 @@ h1 {
 
 /* Estilos para el elemento con el id "indice" */
 #indice {
-    color: #2b2b2b; /* Color del texto del elemento */
-    font-size: 26px; /* Tamaño de fuente grande */
+    color: #2b2b2b;
+    font-size: 26px;
 }
 
 /* Estilos para los enlaces dentro de listas en el elemento con el id "indice" */
 #indice .indice ul li a {
-    color: black; /* Color del texto de los enlaces */
-    font-size: 16px; /* Tamaño de fuente */
+    color: black;
+    font-size: 16px;
 }
 
 /* Estilos para los enlaces en estado "hover" dentro de listas en el elemento con el id "indice" */
@@ -238,18 +234,18 @@ h1 {
 /*SONIDO*/
 /* Estilos para elementos de audio */
 audio {
-    width: 100%; /* Hacer el reproductor de audio de ancho completo */
+    width: 100%;
+    /* Make the audio player full-width */
 }
 
-/* Estilizar los controles de audio */
+/* Style the audio controls */
 audio::-webkit-media-controls-panel {
     background-color: #ffffff; /* Color de fondo */
     border-radius: 10px; /* Bordes redondeados */
     padding: 10px; /* Espaciado interno */
 }
 
-
-/* Estilizar el botón de reproducir y pausar */
+/* Style the play and pause button */
 audio::-webkit-media-controls-play-button {
     background-color: #2b2b2b; /* Color de fondo */
     border-radius: 50%; /* Bordes redondeados para crear un círculo */
@@ -280,7 +276,6 @@ audio::-webkit-media-controls-play-button {
     border: 5px solid #e3e3e3; /* Borde alrededor de la imagen */
 }
 
-/* Estilos para secciones de Hobbies, Deportes, Ciencia, Música y Libros */
 #HobbiesL,
 #DeportesL,
 #CienciaL,
@@ -544,7 +539,8 @@ tr:hover {
     background-color: rgb(147, 147, 147)faf; /* Cambiar el color de fondo al pasar el cursor por encima */
 }
 
-/* Estilos para las imágenes dentro del elemento con el id "NBA" */
+
+
 #NBA img {
     width: 200px; /* Ancho de imagen */
     margin: 0 auto; /* Margen automático en los lados horizontal */
@@ -570,54 +566,16 @@ tr:hover {
 
 /* Estilos para los enlaces dentro del elemento con el id "pizzaList" */
 #pizzaList a {
-    color: black; /* Color de texto */
+    color: black;
+
 }
 
-/* Estilos para la imagen de usuario */
-.imageUser {
-    display: flex; /* Mostrar como flex para alinear elementos */
-}
-
-/* Estilos para la información de usuario */
-.infoUser {
-    background-color: #333; /* Color de fondo */
-    color: #ddd; /* Color de texto */
-    width: 1000px; /* Ancho de información */
-    display: none; /* Ocultar inicialmente */
-    font-size: 30px; /* Tamaño de fuente */
-}
-
-/* Estilos para el contenedor */
-.contenedor {
-    display: flex; /* Mostrar como flex para alinear elementos */
-}
-
-/* Estilos al pasar el cursor por encima de .imageUser */
-.imageUser:hover .infoUser {
-    display: block; /* Mostrar la información al pasar el cursor por encima */
-}
 
 /*about us INDEX*/
 /* Estilos para el contenedor de imágenes e información */
 .image-container {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
-/* Estilos para el contenedor de imagen e información individual */
-.image-info {
-    text-align: center;
-    position: relative;
-}
-
-/* Estilos para las imágenes circulares */
-.circular-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease-in-out;
+ 
 }
 
 /* Estilos para la información debajo de las imágenes */
@@ -643,9 +601,5 @@ tr:hover {
     opacity: 1;
 }
 
-/* Ajusta la imagen cuando el mouse está sobre ella */
-.image-info:hover .circular-image {
-    transform: scale(1.1);
-}
 
 
