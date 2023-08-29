@@ -23,47 +23,49 @@
         </nav>
     </header>
     <section id="indice">
-        <h4>Índice</h4>
         <nav class="indice">
             <ul>
-                <li><a href="#about">About me</a></li>
+                <li><a href="#aboutDiego">About me</a></li>
                 <li><a href="#hobbies">Mis Hobbies</a></li>
+                <li><a href="#Videojuegos">Videojuegos Favoritos</a></li>
+                <li><a href="#Musica">Musica</a></li>
             </ul>
         </nav>
     </section>
-    <section class="main-content">
-        <article>
-    <div class="contenedor" id="about">
-        <h2>About me</h2>
-        <div class="imageUser">
-            <div class="infoUser">
+    <section class="main-contentDiego">
+        <article class="contenedorDiego" id="aboutDiego">
+        <h2>Acerca de mí</h2>
+        <code>
                 <p>Mi nombre es Diego Alejandro Canedo Ballesteros.</p>
-                <p>Estudio en la carrera de Ingenieria de Sistemas en la Universidad Católica.</p>
+                <p>Estudio la carrera de Ingenieria de Sistemas en la Universidad Católica.</p>
                 <p>Me gusta escuchar música, programar y jugar videojuegos.</p>
                 <p>Mi deporte favorito es el karate.</p>
                 <p>Bienvenidos a mi sección del blog</p>
-            </div>
-        </div>
-        
-    </div>
+        </code>
         </article>
     </section>
 
 <div id="hobbies">
-    <section class="hobbies" id="pizzaList">
+    <section class="main-contentDiego" id="EspecialList">
+        <article class="contenedorDiego">
         <div>
-            <h3>Acerca de mis hobbies</h3>
+            <h2>Acerca de mis hobbies y gustos</h2>
+            <code>
             <ul>
-                <li><a href="#Videojuegos"> Videojuegos </a></li>
-                <li><a href="#Musica">Escuchar Música</a></li>
+                <li id="pizza">Comer Pizza</li>
+                <li id="VideojuegosList">Jugar videojuegos</li>
+                <li id="MusicaList">Escuchar Música</li>
+                <li id="CantoList">Cantar</li>
             </ul>
+        </code>
         </div>
+    </article>
     </section>
 </div>
     <section id="Videojuegos">
         <h3>Videojuegos</h3>
         <div class="text">
-            <table>
+            <table class="tablaDiego">
                 <tr>
                     <th>TOP 10 favoritos</th>
                     <th>Nombre</th>
@@ -71,24 +73,74 @@
                     <th>Portada</th>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>The Last of Us Part 2</td>
+                    <td id="top">1</td>
+                    <td id="titulo">The Last of Us Part 2</td>
                     <td><a href="https://www.naughtydog.com/blog/the_last_of_us_part_ii">https://www.naughtydog.com/blog/the_last_of_us_part_ii</a></td>
-                    <td><img src="images/tlou2.jpg" alt="TLOU2"></td>
+                    <td id="portada"><img src="images/tlou2.jpg" alt="TLOU2"></td>
                 </tr>
                 <tr>
-                    <td>2</td>
-                    <td>Age Of Empires II Definitive Edition</td>
+                    <td id="top">2</td>
+                    <td id="titulo">Age Of Empires II Definitive Edition</td>
                     <td><a href="https://www.ageofempires.com/games/aoeiide/">https://www.ageofempires.com/games/aoeiide/</a></td>
-                    <td><img src="images/age2.jpeg" alt="AGE 2"></td>
+                    <td id="portada"><img src="images/age2.jpeg" alt="AGE 2"></td>
                 </tr>
                 <tr>
-                    <td>3</td>
-                    <td>Harry Potter: Magic Awakened</td>
+                    <td id="top">3</td>
+                    <td id="titulo">Harry Potter: Magic Awakened</td>
                     <td><a href="https://www.magicawakened.com/en">https://www.magicawakened.com/en</a></td>
-                    <td><img src="images/harry.jpg" alt="Harry Potters"></td>
+                    <td id="portada"><img src="images/harry.jpg" alt="Harry Potters"></td>
                 </tr>
             </table>
+        </div>
+    </section>
+    <section id="Musica">
+        <h2>Música</h2>
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <figure id="imagenMusica">
+                        <img src="images/MultimediaDiego/track1.jpg" alt="Take on Me">
+                        <br/>
+                        <figcaption>
+                            <span id="nombreCanción">Take on Me (cover)</span><br />
+                            <span id="artistaCanción">Ashley Johnson</span>
+                        </figcaption>
+                    </figure>
+                    <audio controls>
+                        <source src="images/MultimediaDiego/Take on Me TLOU.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="carousel-item">
+                    <figure>
+                        <img src="images/MultimediaDiego/track2.jpg"
+                            alt="Bang Bang">
+                        <br/>
+                        <figcaption>
+                            <span id="nombreCanción">Bang Bang</span><br />
+                            <span id="artistaCanción">K'NAAN ft. Adam Levine</span>
+                        </figcaption>
+                    </figure>
+                    <audio controls>
+                        <source src="images/MultimediaDiego/K'NAAN   Bang Bang ft Adam Levin.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="carousel-item">
+                    <figure>
+                        <img src="images/MultimediaDiego/track3.jpeg" alt="Save Your Tears">
+                        <br />
+                        <figcaption>
+                            <span id="nombreCanción">Save Your Tears</span><br />
+                            <span id="artistaCanción">The Weeknd</span>
+                        </figcaption>
+                    </figure>
+                    <audio controls>
+                        <source src="images/MultimediaDiego/Save Your Tears — The Weeknd    Sub Español   Lyric.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
