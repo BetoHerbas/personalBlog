@@ -12,6 +12,8 @@ body {
     padding: 0; /* Elimina el relleno interior */
     background-color: #f2f2f2; /* Color de fondo */
     color: #333; /* Color del texto */
+    text-align: justify;
+    line-height: 1.5;
 }
 
 /* Estilos para el encabezado */
@@ -293,6 +295,11 @@ audio::-webkit-media-controls-play-button {
     border: 5px solid #e3e3e3; /* Borde alrededor de la imagen */
 }
 
+#horario,
+.Ciencia,
+.Música,
+#Musica,
+#Videojuegos,
 #HobbiesL,
 #DeportesL,
 #CienciaL,
@@ -337,8 +344,8 @@ audio::-webkit-media-controls-play-button {
     width: 90%; /* Ancho del 90% del contenedor */
     margin: 2rem auto; /* Margen en la parte superior e inferior, centrado horizontalmente */
     padding: 2rem; /* Espaciado interno */
-    background-color: rgb(186, 178, 178); /* Color de fondo */
-    color: white; /* Color del texto */
+    background-color: rgb(230, 218, 218); /* Color de fondo */
+    color: rgb(0, 0, 0); /* Color del texto */
     border-radius: 5px; /* Bordes redondeados */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
@@ -405,12 +412,11 @@ audio::-webkit-media-controls-play-button {
     justify-content: space-evenly; /* Espacio uniforme entre elementos */
 }
 
-
 /* Estilos para el texto dentro del elemento con el id "libro" */
 #libro .texto {
     width: 50%; /* Ancho del 50% */
     max-width: 600px; /* Ancho máximo de 600px */
-    text-align: initial; /* Alineación del texto a la izquierda */
+    text-align: justify; /* Alineación del texto justificada */
     padding: 0px 30px; /* Espaciado interno (0px arriba/abajo, 30px izquierda/derecha) */
     display: flex; /* Mostrar elementos en línea */
     flex-direction: column; /* Dirección de columna */

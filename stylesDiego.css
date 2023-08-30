@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: white; /* Fondo blanco */
     color: black; /* Texto negro */
+    line-height: 1.5;
 }
 
 
